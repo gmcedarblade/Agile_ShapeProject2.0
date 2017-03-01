@@ -32,6 +32,11 @@ public class ShapesTest {
 		
 		ShapeFactory shapeFactory = new ShapeFactory(messageBox);
 		Shape cube = shapeFactory.cuboidBuilder(12, 10, 50, messageBox);
+		Shape roundShape = shapeFactory.sphereBuilder(24, messageBox);
+		Shape pipeShape = shapeFactory.cylinderBuilder(24, 84, messageBox);
+		cube.getMessageBox();
+		roundShape.getMessageBox();
+		pipeShape.getMessageBox();
 // FOR NOTES...
 		// set JOptionPane
 //		Component frame = null;
