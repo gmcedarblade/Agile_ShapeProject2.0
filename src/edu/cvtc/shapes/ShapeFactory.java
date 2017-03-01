@@ -13,16 +13,16 @@ public class ShapeFactory {
 	}
 	
 	public Shape cuboidBuilder(float width, float height, float depth, Dialog dialog) {
-		return new Cuboid(12, 10, 50, null);
+		return new Cuboid(12, 10, 50, dialog);
 		
 	}
 	
 	public Shape sphereBuilder(float radius, Dialog dialog) {
-		return new Sphere(14, null);
+		return new Sphere(14, dialog);
 	}
 	
 	public Shape cylinderBuilder(float radius, float height, Dialog dialog) {
-		return new Cylinder(24, 35, null);
+		return new Cylinder(24, 35, dialog);
 	}
 
 }

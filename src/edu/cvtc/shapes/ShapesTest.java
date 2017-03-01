@@ -31,12 +31,12 @@ public class ShapesTest {
 		cylinder.render();
 		
 		ShapeFactory shapeFactory = new ShapeFactory(messageBox);
-		Shape cube = shapeFactory.cuboidBuilder(12, 10, 50, messageBox);
-		Shape roundShape = shapeFactory.sphereBuilder(24, messageBox);
-		Shape pipeShape = shapeFactory.cylinderBuilder(24, 84, messageBox);
-		cube.getMessageBox();
-		roundShape.getMessageBox();
-		pipeShape.getMessageBox();
+		Renderer cube = shapeFactory.cuboidBuilder(12, 10, 50, messageBox);
+		Renderer roundShape = shapeFactory.sphereBuilder(24, messageBox);
+		Renderer pipeShape = shapeFactory.cylinderBuilder(24, 84, messageBox);
+		cube.render();
+		roundShape.render();
+		pipeShape.render();
 // FOR NOTES...
 		// set JOptionPane
 //		Component frame = null;
